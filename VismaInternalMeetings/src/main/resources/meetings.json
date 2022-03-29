@@ -1,0 +1,28 @@
+[
+
+    {
+    "id": 1,
+    "name": "Meeting1",
+    "description": "Jono Java meetas",
+    "category": "CodeMonkey",
+    "Type": "Live",
+    "StartDate": "2022-01-01",
+    "EndDate": "2022-02-01",
+    "participants": [{
+      "name": "Petras"
+    }]
+    },
+    {
+    "id": 2,
+    "name": "Meeting2",
+    "description": "Simo Java meetas",
+    "category": "CodeMonkey",
+    "Type": "Live",
+    "StartDate": "2022-01-01",
+    "EndDate": "2022-02-01",
+    "participants": [{
+      "name": "Algimantas"
+    }]
+    }
+
+]
