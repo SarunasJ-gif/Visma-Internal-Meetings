@@ -1,12 +1,12 @@
 package com.example.VismaInternalMeetings.model;
 
-    enum Type {
+public enum MeetingType {
     LIVE ("Live"),
     INPERSON ("InPerson");
 
     private final String typeValues;
 
-     Type(String typeValues) {
+    MeetingType(String typeValues) {
         this.typeValues = typeValues;
     }
 

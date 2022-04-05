@@ -3,6 +3,7 @@ package com.example.VismaInternalMeetings.controller;
 
 import com.example.VismaInternalMeetings.model.Meeting;
 import com.example.VismaInternalMeetings.model.Participant;
+import com.example.VismaInternalMeetings.repository.MeetingJsonRepository;
 import com.example.VismaInternalMeetings.repository.MeetingRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

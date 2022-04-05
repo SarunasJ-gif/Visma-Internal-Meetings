@@ -1,6 +1,6 @@
 package com.example.VismaInternalMeetings.model;
 
-   enum Category {
+   public enum Category {
 
        CODEMONKEY ("CodeMonkey"),
        HUB ("Hub"),

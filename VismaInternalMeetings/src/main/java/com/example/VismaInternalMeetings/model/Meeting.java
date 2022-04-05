@@ -1,5 +1,7 @@
 package com.example.VismaInternalMeetings.model;
 
+import org.springframework.data.annotation.Id;
+
 import javax.persistence.Entity;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -8,12 +10,14 @@ import java.util.Objects;
 @Entity
 public class Meeting {
 
+    @Id
     private Long id;
+
     private String name;
     private String responsiblePerson;
     private String description;
     private Category category;
-    private Type type;
+    private MeetingType type;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
     private List<Participant> participants;
@@ -23,7 +27,7 @@ public class Meeting {
                    String responsiblePerson,
                    String description,
                    Category category,
-                   Type type,
+                   MeetingType type,
                    LocalDateTime startDate,
                    LocalDateTime endDate,
                    List<Participant> participants) {
@@ -75,7 +79,7 @@ public class Meeting {
         return category;
     }
 
-    public Type getType() {
+    public MeetingType getType() {
         return type;
     }
 
