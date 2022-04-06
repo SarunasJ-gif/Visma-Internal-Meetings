@@ -61,14 +61,24 @@ public class MeetingRepositoryImpl implements MeetingRepository {
     public List<Meeting> findByAttendees(List<String> participants) {
         List<Meeting> resultMeetings = new ArrayList<>();
         List<Meeting> allMeetings = meetingJsonRepository.findAll();
-        for(String participant:participants){
-            for(Meeting meeting:allMeetings){
-                List<String> meetingParticipants = meeting.getParticipants().stream().map(partc->partc.getName()).collect(Collectors.toList());
-                if(meetingParticipants.contains(participant)){
+        for (String participant : participants) {
+            for (Meeting meeting:allMeetings) {
+                List<String> meetingParticipants = meeting.getParticipants().stream().map(partc -> partc.getName()).collect(Collectors.toList());
+                if (meetingParticipants.contains(participant)) {
                     resultMeetings.add(meeting);
                 }
             }
         }
         return resultMeetings;
+    }
+
+    @Override
+    public Meeting save(Meeting meeting) {
+        return meetingJsonRepository.save(meeting);
+    }
+
+    @Override
+    public void delete(Meeting meetingToDelete) {
+        meetingJsonRepository.delete(meetingToDelete);
     }
 }

@@ -18,9 +18,7 @@ public interface MeetingJsonRepository extends JpaRepository<Meeting, Long> {
         List<Meeting> findByDescription(String description);
         List<Meeting> findByStartDate(LocalDateTime startDate);
         List<Meeting> findByEndDate(LocalDateTime endDate);
-
         List<Meeting> findAllWithStartDateAfter(LocalDateTime startDate);
-
         List<Meeting> findAllWithEndDateBefore(LocalDateTime endDate);
 
 }
