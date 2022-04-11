@@ -11,7 +11,9 @@
     <orderEntry type="module" module-name="VismaInternalMeetings.VismaInternalMeetings.main~1" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.6.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-jpa:2.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: javax.persistence:javax.persistence-api:2.2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:2.6.5" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.6.5" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.6.5" level="project" />
@@ -19,7 +21,6 @@
     <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:5.3.17" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-web:5.3.17" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.13.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.13.2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-commons:2.6.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-orm:5.3.17" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.3.17" level="project" />

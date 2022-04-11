@@ -1,30 +1,63 @@
 [
 
     {
+    "_class": "com.example.VismaInternalMeetings.model.Meeting",
     "id": 1,
     "name": "Meeting1",
     "description": "Jono Java meetas",
-    "ResponsiblePerson": "Jonas",
-    "category": "CodeMonkey",
-    "Type": "Live",
-    "StartDate": "2022-01-01",
-    "EndDate": "2022-02-01",
-    "participants": [{
-      "name": "Petras"
-    }]
+    "responsiblePerson": "Jonas",
+    "category": {
+        "_class": "com.example.VismaInternalMeetings.model.Category",
+        "category": "CodeMonkey"
+    },
+    "type": {
+        "_class": "com.example.VismaInternalMeetings.model.MeetingType",
+        "type": "Live"
+    },
+    "startDate": "2022-01-01",
+    "endDate": "2022-02-01",
+    "participants": [
+        {
+            "participant" :
+                {
+                    "_class": "com.example.VismaInternalMeetings.model.Participant",
+                    "name": "Petras"
+                }
+        }
+    ]
     },
     {
+    "_class": "com.example.VismaInternalMeetings.model.Meeting",
     "id": 2,
     "name": "Meeting2",
     "description": "Simo Java meetas",
-    "ResponsiblePerson": "Simas",
-    "category": "CodeMonkey",
-    "Type": "Live",
-    "StartDate": "2022-01-01",
-    "EndDate": "2022-02-01",
-    "participants": [{
-      "name": "Algimantas"
-    }]
+    "responsiblePerson": "Simas",
+    "category": {
+        "_class": "com.example.VismaInternalMeetings.model.Category",
+        "category": "CodeMonkey"
+    },
+    "type": {
+        "_class": "com.example.VismaInternalMeetings.model.MeetingType",
+        "type": "Live"
+    },
+    "startDate": "2022-01-01",
+    "endDate": "2022-02-01",
+    "participants": [
+        {
+            "participant" :
+            {
+                "_class": "com.example.VismaInternalMeetings.model.Participant",
+                "name": "Petras"
+            }
+        },
+        {
+            "participant" :
+            {
+                "_class": "com.example.VismaInternalMeetings.model.Participant",
+                "name": "Algimantas"
+            }
+        }
+    ]
     }
 
 ]
