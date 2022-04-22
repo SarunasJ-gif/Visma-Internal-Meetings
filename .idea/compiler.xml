@@ -2,7 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="VismaInternalMeetings.VismaInternalMeetings.main" target="11" />
       <module name="VismaInternalMeetings.VismaInternalMeetings.main~1" target="11" />
+      <module name="VismaInternalMeetings.VismaInternalMeetings.test" target="11" />
       <module name="VismaInternalMeetings.VismaInternalMeetings.test~1" target="11" />
     </bytecodeTargetLevel>
   </component>

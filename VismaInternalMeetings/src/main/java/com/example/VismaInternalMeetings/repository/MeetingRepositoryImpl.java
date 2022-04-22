@@ -1,7 +1,6 @@
 package com.example.VismaInternalMeetings.repository;
 
 import com.example.VismaInternalMeetings.model.Meeting;
-import com.example.VismaInternalMeetings.model.MeetingType;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
@@ -37,7 +36,7 @@ public class MeetingRepositoryImpl implements MeetingRepository {
     }
 
     @Override
-    public List<Meeting> findByType(MeetingType type) {
+    public List<Meeting> findByType(String type) {
         return meetingJsonRepository.findByType(type);
     }
 

@@ -3,7 +3,7 @@ package com.example.VismaInternalMeetings.model;
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.Entity;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -16,20 +16,23 @@ public class Meeting {
     private String name;
     private String responsiblePerson;
     private String description;
-    private Category category;
-    private MeetingType type;
-    private LocalDateTime startDate;
-    private LocalDateTime endDate;
+    private String category;
+    private String type;
+    private Date startDate;
+    private Date endDate;
     private List<Participant> participants;
+
+    public Meeting() {
+    }
 
     public Meeting(Long id,
                    String name,
                    String responsiblePerson,
                    String description,
-                   Category category,
-                   MeetingType type,
-                   LocalDateTime startDate,
-                   LocalDateTime endDate,
+                   String category,
+                   String type,
+                   Date startDate,
+                   Date endDate,
                    List<Participant> participants) {
 
         this.id = id;
@@ -75,27 +78,27 @@ public class Meeting {
         this.description = description;
     }
 
-    public Category getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public MeetingType getType() {
+    public String getType() {
         return type;
     }
 
-    public LocalDateTime getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(LocalDateTime startDate) {
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
-    public LocalDateTime getEndDate() {
+    public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(LocalDateTime endDate) {
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
 

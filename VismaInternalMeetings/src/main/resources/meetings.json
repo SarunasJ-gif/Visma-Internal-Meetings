@@ -6,14 +6,8 @@
     "name": "Meeting1",
     "description": "Jono Java meetas",
     "responsiblePerson": "Jonas",
-    "category": {
-        "_class": "com.example.VismaInternalMeetings.model.Category",
-        "category": "CodeMonkey"
-    },
-    "type": {
-        "_class": "com.example.VismaInternalMeetings.model.MeetingType",
-        "type": "Live"
-    },
+    "category": "CodeMonkey",
+    "type": "Live",
     "startDate": "2022-01-01",
     "endDate": "2022-02-01",
     "participants": [
@@ -32,14 +26,8 @@
     "name": "Meeting2",
     "description": "Simo Java meetas",
     "responsiblePerson": "Simas",
-    "category": {
-        "_class": "com.example.VismaInternalMeetings.model.Category",
-        "category": "CodeMonkey"
-    },
-    "type": {
-        "_class": "com.example.VismaInternalMeetings.model.MeetingType",
-        "type": "Live"
-    },
+    "category": "CodeMonkey",
+    "type": "Live",
     "startDate": "2022-01-01",
     "endDate": "2022-02-01",
     "participants": [

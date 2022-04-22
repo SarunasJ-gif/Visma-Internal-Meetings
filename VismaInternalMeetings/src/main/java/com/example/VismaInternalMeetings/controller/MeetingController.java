@@ -2,9 +2,9 @@ package com.example.VismaInternalMeetings.controller;
 
 
 import com.example.VismaInternalMeetings.model.Meeting;
-import com.example.VismaInternalMeetings.model.MeetingType;
 import com.example.VismaInternalMeetings.model.Participant;
 import com.example.VismaInternalMeetings.repository.MeetingRepositoryImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +17,7 @@ import java.util.Optional;
 @RequestMapping("/meetings")
 public class MeetingController {
 
+    @Autowired
     private final MeetingRepositoryImpl repository;
 
 
@@ -100,7 +101,7 @@ public class MeetingController {
     public List<Meeting> searchMeeting(@RequestParam(name = "description", required = false) String description,
                                        @RequestParam(name = "responsiblePerson", required = false) String responsiblePerson,
                                        @RequestParam(name = "category", required = false) String category,
-                                       @RequestParam(name = "type", required = false) MeetingType type,
+                                       @RequestParam(name = "type", required = false) String type,
                                        @RequestParam(name = "startDate", required = false) LocalDateTime startDate,
                                        @RequestParam(name = "endDate", required = false) LocalDateTime endDate,
                                        @RequestParam(name = "numberOfAttendees", required = false) Long count) {
